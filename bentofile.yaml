@@ -1,0 +1,15 @@
+service: "service.py:svc"
+labels:
+  owner: lilmaxie
+  project: bentoml-example
+  version: "0.1.0"
+  description: "A simple service to demonstrate BentoML"
+  tags:
+    - example
+    - demo
+  include:
+  - "*.py"
+  python:
+    packages:
+      - scikit-learn
+      - pandas
